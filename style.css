@@ -1,11 +1,11 @@
 html{
-    background: rgb(59,3,122);
-    background: linear-gradient(90deg, rgba(59,3,122,1) 0%, rgba(108,45,208,1) 35%, rgba(0,212,255,1) 100%);}
-
+    background: rgb(184,21,103);
+background: linear-gradient(90deg, rgba(184,21,103,1) 0%, rgba(253,29,176,1) 50%, rgba(252,176,69,1) 100%);
+}
 #container{
     background-color: white;
     width: 400px;
-    height: 400px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,6 +20,49 @@ body{
     display: flex;
     justify-content: center; 
     height: 100vh;
+    font-family: sans-serif;
+    font-size: large;
+}
+input {
+    font-family: sans-serif;
+}
+select{
+    font-family: sans-serif;
+}
+button {
+    position: relative;
+    background-color: #ff00b3;
+    border: none;
+    font-size: 12px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 90px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20%;
+  }
+
+button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+
+button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
 }
 
 
